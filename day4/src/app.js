@@ -7,12 +7,7 @@ const app = express() // jaise express ko call karte ho server create ho jata ha
 
 app.use(express.json())
 
-const notes = [
-    // {
-    //     title:"test title 1",
-    //     discription:"test derscription 1"
-    // }
-]
+const notes = []
 
 
 app.post("/notes",(req,res)=>{

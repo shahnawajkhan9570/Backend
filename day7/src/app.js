@@ -27,6 +27,7 @@ app.post('/notes', async (req, res)=>{
 // fetch all notes from db
 app.get('/notes', async (req, res)=>{
     const allNotes = await noteModel.find()
+    
     res.status(200).json({
         message: 'all notes fetched successfully',
         notes: allNotes
